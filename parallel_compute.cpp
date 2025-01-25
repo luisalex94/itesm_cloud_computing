@@ -12,10 +12,16 @@ using namespace std;
 
 int main() {
     const int N = 2000000000;
-    int nThreads, tid;
+    int nThreads, tid, arr_n1, arr_n2;
 
-    vector<int> array1(N, 20);
-    vector<int> array2(N, 8);
+    cout << "Array 1 content: ";
+    cin >> arr_n1;
+
+    cout << "Array 2 content: ";
+    cin >> arr_n2;
+
+    vector<int> array1(N, arr_n1);
+    vector<int> array2(N, arr_n2);
     vector<int> result(N, 0);
 
     cout << "Enter the number of threads: ";
